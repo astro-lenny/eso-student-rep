@@ -143,7 +143,7 @@ def create_schedule(people, start_date, year=2025, filename='schedule.xlsx'):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-names', type=str, required=True, help='Path to file with names')
-    parser.add_argument('-start', type=str, required=True, help='Start date (YYYY-MM-DD)')
+    parser.add_argument('-start', type=str, default=datetime.now().strftime('%Y-%m-%d'), help='Start date (YYYY-MM-DD), defaults to today')
     parser.add_argument('-out', type=str, default='schedule.xlsx', help='Output Excel filename')
     args = parser.parse_args()
 
