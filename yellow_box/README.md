@@ -1,4 +1,4 @@
-# eso-student-rep
+### yellow-box
 
 you can create a randomized schedule of students from the file names.txt (one name per row).
 
